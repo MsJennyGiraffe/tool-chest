@@ -1,0 +1,5 @@
+<%= link_to "New tool", new_tool_path %><br><br>
+
+<% @tools.each do |tool| %>
+  <%= link_to tool.name, tool_path(tool) %><br>
+<% end %>
